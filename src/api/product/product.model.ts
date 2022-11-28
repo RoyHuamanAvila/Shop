@@ -42,6 +42,8 @@ export class Product {
     slug: string
     @prop({type: String,required: true})
     status: string
+    @prop({type: Number, required: true})
+    price: number
 }
 
 const ProductModel = getModelForClass(Product)
